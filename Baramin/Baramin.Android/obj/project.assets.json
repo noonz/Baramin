@@ -2148,11 +2148,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\noonz\\git\\testing\\Baramin\\Baramin\\Baramin.Android\\Baramin.Android.csproj",
+      "projectUniqueName": "C:\\Users\\noonz\\git\\xamarin_case_study\\Baramin\\Baramin.Android\\Baramin.Android.csproj",
       "projectName": "Baramin.Android",
-      "projectPath": "C:\\Users\\noonz\\git\\testing\\Baramin\\Baramin\\Baramin.Android\\Baramin.Android.csproj",
+      "projectPath": "C:\\Users\\noonz\\git\\xamarin_case_study\\Baramin\\Baramin.Android\\Baramin.Android.csproj",
       "packagesPath": "C:\\Users\\noonz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\noonz\\git\\testing\\Baramin\\Baramin\\Baramin.Android\\obj\\",
+      "outputPath": "C:\\Users\\noonz\\git\\xamarin_case_study\\Baramin\\Baramin.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2173,8 +2173,8 @@
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "C:\\Users\\noonz\\git\\testing\\Baramin\\Baramin\\Baramin\\Baramin.csproj": {
-              "projectPath": "C:\\Users\\noonz\\git\\testing\\Baramin\\Baramin\\Baramin\\Baramin.csproj"
+            "C:\\Users\\noonz\\git\\xamarin_case_study\\Baramin\\Baramin\\Baramin.csproj": {
+              "projectPath": "C:\\Users\\noonz\\git\\xamarin_case_study\\Baramin\\Baramin\\Baramin.csproj"
             }
           }
         }

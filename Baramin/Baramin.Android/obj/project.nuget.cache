@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sJkUJujvSbiQDl1NKE6K3b8lAr4XqB1Ii3Pfw1Tcmtq8g3+o22eE4me4Ecre+8RPaJGIxYcpkl6+9ij23tS6Ig==",
+  "dgSpecHash": "W2G1BsGtRxNQ0B0Gn2kewoMg1+UUfG7U0+K+9CNU5GU7SJ7t9lloVsikH9g6iftqS/7Anh0emhq+kTPxreecQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\noonz\\git\\testing\\Baramin\\Baramin\\Baramin.Android\\Baramin.Android.csproj",
+  "projectFilePath": "C:\\Users\\noonz\\git\\xamarin_case_study\\Baramin\\Baramin.Android\\Baramin.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\noonz\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.androidx.activity\\1.1.0.5\\xamarin.androidx.activity.1.1.0.5.nupkg.sha512",
