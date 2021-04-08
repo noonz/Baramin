@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{45741ECB-A8CC-4BCE-BC24-0335E8DD9E9E}|Default">
+  <MonoDevelop.Ide.ItemProperties.Baramin.Android PreferredExecutionTarget="Android.Pixel_2_XL_API_30" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Baramin" expanded="True" selected="True">
+            <Node name="Baramin" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

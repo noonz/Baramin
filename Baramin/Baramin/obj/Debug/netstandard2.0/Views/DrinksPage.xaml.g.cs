@@ -13,7 +13,7 @@
 namespace Baramin.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\DrinksPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/DrinksPage.xaml")]
     public partial class DrinksPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
