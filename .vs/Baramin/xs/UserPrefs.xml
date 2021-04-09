@@ -1,16 +1,33 @@
 ﻿<Properties StartupConfiguration="{45741ECB-A8CC-4BCE-BC24-0335E8DD9E9E}|Default">
   <MonoDevelop.Ide.ItemProperties.Baramin.Android PreferredExecutionTarget="Android.Pixel_2_XL_API_30" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Downloads/XamarinForms-Recipes-master/FinalProject/App.xaml">
+    <Files>
+      <File FileName="../../Downloads/XamarinForms-Recipes-master/FinalProject/App.xaml" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Baramin" expanded="True" selected="True">
+          <Node name="Baramin" expanded="True">
             <Node name="Baramin" expanded="True">
               <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="CocktailDetailsView.xaml" expanded="True" />
+                <Node name="DrinksPage.xaml" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+          <Node name="FinalProject" expanded="True">
+            <Node name="FinalProject" expanded="True">
+              <Node name="Views" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>

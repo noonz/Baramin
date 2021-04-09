@@ -82,7 +82,7 @@
         <ShellContent Route="RandomDrinkPage" ContentTemplate="{DataTemplate local:RandomDrinkPage}" />
     </FlyoutItem>
     <FlyoutItem Title="Drink List" Icon="icon_martini.png">
-        <ShellContent Route="DrinksPage" ContentTemplate="{DataTemplate local:DrinksPage}" />
+        <ShellContent Route="CocktailView" ContentTemplate="{DataTemplate local:CocktailView}" />
     </FlyoutItem>
     <FlyoutItem Title="Favourites List" Icon="icon_martini.png">
         <ShellContent Route="FavouritesPage" ContentTemplate="{DataTemplate local:FavouritesPage}" />
