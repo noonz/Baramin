@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
-             ios:Page.UseSafeArea="true" 
              xmlns:viewModels="clr-namespace:Baramin.ViewModels" 
              BackgroundColor="#08AEEA"
              NavigationPage.HasNavigationBar="false"
@@ -14,13 +12,11 @@
     
     <ContentPage.Resources>
         <ResourceDictionary>
-            
             <Style x:Key="listViewStyle" TargetType="ListView">
                 <Setter Property="HasUnevenRows" Value="true" />
                 <Setter Property="SeparatorVisibility" Value="None" />
                 <Setter Property="BackgroundColor" Value="#fff" />
-            </Style>            
-            
+            </Style>
             <Style x:Key="mainFrameStyle" TargetType="Frame">
                 <Setter Property="CornerRadius" Value="15" />
                 <Setter Property="Padding" Value="0" />
@@ -30,24 +26,10 @@
                 <Setter Property="HeightRequest" Value="100" />
                 <Setter Property="BackgroundColor" Value="#323232" />
             </Style>
-            
-            <Style x:Key="suggestionsFrameStyle" TargetType="Frame">
-                <Setter Property="CornerRadius" Value="15" />
-                <Setter Property="Padding" Value="0" />
-                <Setter Property="Margin" Value="5, 5" />
-                <Setter Property="HasShadow" Value="true" />
-                <Setter Property="IsClippedToBounds" Value="true" />
-                <Setter Property="HeightRequest" Value="50" />
-                <Setter Property="WidthRequest" Value="120" />
-                <Setter Property="BackgroundColor" Value="#323232" />
-            </Style>
-            
             <Style x:Key="listViewImagesStyle" TargetType="Image">
                 <Setter Property="Opacity" Value="0.7" />
                 <Setter Property="Aspect" Value="AspectFill" />
             </Style>
-
-            
             <Style x:Key="mainLabelStyle" TargetType="Label">
                 <Setter Property="FontSize" Value="Medium" />
                 <Setter Property="FontAttributes" Value="Bold" />
@@ -56,15 +38,12 @@
                 <Setter Property="Grid.Row" Value="3" />
                 <Setter Property="Margin" Value="15, 5, 0, 5" />
             </Style>
-            
             <Style x:Key="listViewImagesLabelStyle" TargetType="Label">
                 <Setter Property="FontSize" Value="Medium" />
                 <Setter Property="FontAttributes" Value="Bold" />
                 <Setter Property="TextColor" Value="#fff" />
                 <Setter Property="Margin" Value="15, 60, 5, 0" />
             </Style>
-
-            
             <Style x:Key="activityIndicatorStyle" TargetType="ActivityIndicator">
                 <Setter Property="Color" Value="#323232" />
                 <Setter Property="IsRunning" Value="True" />
@@ -92,12 +71,8 @@
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        
-                        <Label Text="{Binding _mainLabel}"
-                               Style="{StaticResource mainLabelStyle}" />
-
-                        <ActivityIndicator Style="{StaticResource activityIndicatorStyle}"
-                                           IsVisible="{Binding _activityIndicatorRunning}"/>
+                        <Label Text="{Binding _mainLabel}" Style="{StaticResource mainLabelStyle}" />
+                        <ActivityIndicator Style="{StaticResource activityIndicatorStyle}" IsVisible="{Binding _activityIndicatorRunning}"/>
                     </Grid>
                 </StackLayout>
             </ListView.Header>
@@ -108,8 +83,7 @@
                         <ViewCell.View>
                             <Frame Style="{StaticResource mainFrameStyle}">
                                 <Grid>
-                                    <Image Source="{Binding StrDrinkThumb}" 
-                                           Style="{StaticResource listViewImagesStyle}" />
+                                    <Image Source="{Binding StrDrinkThumb}" Style="{StaticResource listViewImagesStyle}" />
                                     <Label Text="{Binding StrDrink}" Style="{StaticResource listViewImagesLabelStyle}" />
                                 </Grid>
                             </Frame>

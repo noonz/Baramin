@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Baramin.Models;
+﻿using Baramin.Models;
 using Baramin.ViewModels;
 using DLToolkit.Forms.Controls;
 

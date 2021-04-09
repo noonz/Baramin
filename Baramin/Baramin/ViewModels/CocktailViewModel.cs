@@ -1,12 +1,10 @@
-﻿using System;
-using System.ComponentModel;
+﻿using Baramin.Models;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
-using Baramin.Models;
-
-using Xamarin.Forms;
 
 namespace Baramin.ViewModels
 {
@@ -19,9 +17,7 @@ namespace Baramin.ViewModels
         private string _apiAdressRecipe = "https://www.thecocktaildb.com/api/json/v1/1/search.php";
 
         public List<DrinkDetail> _cocktailsListView { get; set; }
-        public string _loadingBackgroundColor { get; set; }
         public string _mainLabel { get; set; }
-        public bool _activityIndicatorRunning { get; set; }
 
         public DrinkDetail _recipeDetails { get; set; }
         public string _recipeImage { get; set; }
@@ -36,9 +32,7 @@ namespace Baramin.ViewModels
         {
             _viewModelInstance = this;
             _cocktailsListView = new List<DrinkDetail>();
-            _loadingBackgroundColor = "#fff";
             _mainLabel = "Top Cocktails";
-            _activityIndicatorRunning = false;
             _ = SearchBestRecipes();
         }
 
@@ -47,59 +41,59 @@ namespace Baramin.ViewModels
             _recipeDetails = cocktail;
             _recipeImage = cocktail.StrDrinkThumb.ToString();
             _recipeTitle = cocktail.StrDrink;
-            if (cocktail.strCategory != null)
-                _recipeCategory = cocktail.strCategory;
+            if (cocktail.StrCategory != null)
+                _recipeCategory = cocktail.StrCategory;
             _recipeIngredients = new List<string>();
             _recipeMeasures = new List<string>();
 
-            if (cocktail.strIngredient1 != null)
+            if (cocktail.StrIngredient1 != null)
             {
-                if (cocktail.strIngredient1 != "")
-                    _recipeIngredients.Add(cocktail.strIngredient1);
-                if (cocktail.strIngredient2 != "")
-                    _recipeIngredients.Add(cocktail.strIngredient2);
-                if (cocktail.strIngredient3 != "")
-                    _recipeIngredients.Add(cocktail.strIngredient3);
-                if (cocktail.strIngredient4 != "")
-                    _recipeIngredients.Add(cocktail.strIngredient4);
-                if (cocktail.strIngredient5 != "")
-                    _recipeIngredients.Add(cocktail.strIngredient5);
-                if (cocktail.strIngredient6 != "")
-                    _recipeIngredients.Add(cocktail.strIngredient6);
-                if (cocktail.strIngredient7 != "")
-                    _recipeIngredients.Add(cocktail.strIngredient7);
-                if (cocktail.strIngredient8 != "")
-                    _recipeIngredients.Add(cocktail.strIngredient8);
-                if (cocktail.strIngredient9 != "")
-                    _recipeIngredients.Add(cocktail.strIngredient9);
+                if (cocktail.StrIngredient1 != "")
+                    _recipeIngredients.Add(cocktail.StrIngredient1);
+                if (cocktail.StrIngredient2 != "")
+                    _recipeIngredients.Add(cocktail.StrIngredient2);
+                if (cocktail.StrIngredient3 != "")
+                    _recipeIngredients.Add(cocktail.StrIngredient3);
+                if (cocktail.StrIngredient4 != "")
+                    _recipeIngredients.Add(cocktail.StrIngredient4);
+                if (cocktail.StrIngredient5 != "")
+                    _recipeIngredients.Add(cocktail.StrIngredient5);
+                if (cocktail.StrIngredient6 != "")
+                    _recipeIngredients.Add(cocktail.StrIngredient6);
+                if (cocktail.StrIngredient7 != "")
+                    _recipeIngredients.Add(cocktail.StrIngredient7);
+                if (cocktail.StrIngredient8 != "")
+                    _recipeIngredients.Add(cocktail.StrIngredient8);
+                if (cocktail.StrIngredient9 != "")
+                    _recipeIngredients.Add(cocktail.StrIngredient9);
             }
-            if (cocktail.strMeasure1 != null)
+            if (cocktail.StrMeasure1 != null)
             {
-                if (cocktail.strMeasure1 != "")
-                    _recipeMeasures.Add(cocktail.strMeasure1);
-                if (cocktail.strMeasure2 != "")
-                    _recipeMeasures.Add(cocktail.strMeasure2);
-                if (cocktail.strMeasure3 != "")
-                    _recipeMeasures.Add(cocktail.strMeasure3);
-                if (cocktail.strMeasure4 != "")
-                    _recipeMeasures.Add(cocktail.strMeasure4);
-                if (cocktail.strMeasure5 != "")
-                    _recipeMeasures.Add(cocktail.strMeasure5);
-                if (cocktail.strMeasure6 != "")
-                    _recipeMeasures.Add(cocktail.strMeasure6);
-                if (cocktail.strMeasure7 != "")
-                    _recipeMeasures.Add(cocktail.strMeasure7);
-                if (cocktail.strMeasure8 != "")
-                    _recipeMeasures.Add(cocktail.strMeasure8);
-                if (cocktail.strMeasure9 != "")
-                    _recipeMeasures.Add(cocktail.strMeasure9);
+                if (cocktail.StrMeasure1 != "")
+                    _recipeMeasures.Add(cocktail.StrMeasure1);
+                if (cocktail.StrMeasure2 != "")
+                    _recipeMeasures.Add(cocktail.StrMeasure2);
+                if (cocktail.StrMeasure3 != "")
+                    _recipeMeasures.Add(cocktail.StrMeasure3);
+                if (cocktail.StrMeasure4 != "")
+                    _recipeMeasures.Add(cocktail.StrMeasure4);
+                if (cocktail.StrMeasure5 != "")
+                    _recipeMeasures.Add(cocktail.StrMeasure5);
+                if (cocktail.StrMeasure6 != "")
+                    _recipeMeasures.Add(cocktail.StrMeasure6);
+                if (cocktail.StrMeasure7 != "")
+                    _recipeMeasures.Add(cocktail.StrMeasure7);
+                if (cocktail.StrMeasure8 != "")
+                    _recipeMeasures.Add(cocktail.StrMeasure8);
+                if (cocktail.StrMeasure9 != "")
+                    _recipeMeasures.Add(cocktail.StrMeasure9);
             }
 
-            if (cocktail.strInstructions != null)
-                _recipeInstructions = cocktail.strInstructions;
+            if (cocktail.StrInstructions != null)
+                _recipeInstructions = cocktail.StrInstructions;
 
-            if (cocktail.strAlcoholic != null)
-                _recipeIsAlcoholic = cocktail.strAlcoholic;
+            if (cocktail.StrAlcoholic != null)
+                _recipeIsAlcoholic = cocktail.StrAlcoholic;
 
             OnPropertyChanged("_recipeImage");
             OnPropertyChanged("_recipeTitle");
@@ -112,9 +106,7 @@ namespace Baramin.ViewModels
 
         async Task SearchBestRecipes()
         {
-            Loading();
             await GetBestRecipes();
-            Loading();
         }
 
         async Task GetBestRecipes()
@@ -128,25 +120,11 @@ namespace Baramin.ViewModels
             {
                 var jsonContent = await response.Content.ReadAsStringAsync();
                 var data = JsonConvert.DeserializeObject<CocktailDetail>(jsonContent);
-                if (data.drinks != null)
+                if (data.Drinks != null)
                 {
-                    _cocktailsListView = data.drinks;
+                    _cocktailsListView = data.Drinks;
                     OnPropertyChanged("_cocktailsListView");
                 }
-            }
-        }
-
-        private void Loading()
-        {
-            if (_activityIndicatorRunning == false)
-            {
-                _activityIndicatorRunning = true;
-                OnPropertyChanged("_activityIndicatorRunning");
-            }
-            else
-            {
-                _activityIndicatorRunning = false;
-                OnPropertyChanged("_activityIndicatorRunning");
             }
         }
 

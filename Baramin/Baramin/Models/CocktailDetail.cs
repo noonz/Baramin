@@ -1,9 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Converters;
-using Xamarin.Forms;
 
 namespace Baramin.Models
 {
@@ -16,161 +15,194 @@ namespace Baramin.Models
         [JsonProperty("strDrink")]
         public string StrDrink { get; set; }
 
-        [JsonProperty("strDrinkAlternate")]
-        public string strDrinkAlternate { get; set; }
-
-        [JsonProperty("strDrinkES")]
-        public string strDrinkES { get; set; }
-
-        [JsonProperty("strDrinkDE")]
-        public string strDrinkDE { get; set; }
-
-        [JsonProperty("strDrinkFR")]
-        public string strDrinkFR { get; set; }
-
-        [JsonProperty("strDrinkZH-HANS")]
-        public string strDrinkZH { get; set; }
-
-        [JsonProperty("strDrinkZH-HANT")]
-        public string strDrinkZHH { get; set; }
-
-        [JsonProperty("strTags")]
-        public string strTags { get; set; }
-
-        [JsonProperty("strVideo")]
-        public string strVideo { get; set; }
-
         [JsonProperty("strCategory")]
-        public string strCategory { get; set; }
-
-        [JsonProperty("strIBA")]
-        public string strIBA { get; set; }
+        public string StrCategory { get; set; }
 
         [JsonProperty("strAlcoholic")]
-        public string strAlcoholic { get; set; }
+        public string StrAlcoholic { get; set; }
 
         [JsonProperty("strGlass")]
-        public string strGlass { get; set; }
+        public string StrGlass { get; set; }
 
         [JsonProperty("strInstructions")]
-        public string strInstructions { get; set; }
-
-        [JsonProperty("strInstructionsES")]
-        public string strInstructionsES { get; set; }
-
-        [JsonProperty("strInstructionsDE")]
-        public string strInstructionsDE { get; set; }
-
-        [JsonProperty("strInstructionsFR")]
-        public string strInstructionsFR { get; set; }
-
-        [JsonProperty("strInstructionsZH-HANS")]
-        public string strInstructionsZH { get; set; }
-
-        [JsonProperty("strInstructionsZH-HANT")]
-        public string strInstructionsZHH { get; set; }
+        public string StrInstructions { get; set; }
 
         [JsonProperty("strDrinkThumb")]
         public Uri StrDrinkThumb { get; set; }
 
         [JsonProperty("strIngredient1")]
-        public string strIngredient1 { get; set; }
+        public string StrIngredient1 { get; set; }
 
         [JsonProperty("strIngredient2")]
-        public string strIngredient2 { get; set; }
+        public string StrIngredient2 { get; set; }
 
         [JsonProperty("strIngredient3")]
-        public string strIngredient3 { get; set; }
+        public string StrIngredient3 { get; set; }
 
         [JsonProperty("strIngredient4")]
-        public string strIngredient4 { get; set; }
+        public string StrIngredient4 { get; set; }
 
         [JsonProperty("strIngredient5")]
-        public string strIngredient5 { get; set; }
+        public string StrIngredient5 { get; set; }
 
         [JsonProperty("strIngredient6")]
-        public string strIngredient6 { get; set; }
+        public string StrIngredient6 { get; set; }
 
         [JsonProperty("strIngredient7")]
-        public string strIngredient7 { get; set; }
+        public string StrIngredient7 { get; set; }
 
         [JsonProperty("strIngredient8")]
-        public string strIngredient8 { get; set; }
+        public string StrIngredient8 { get; set; }
 
         [JsonProperty("strIngredient9")]
-        public string strIngredient9 { get; set; }
+        public string StrIngredient9 { get; set; }
 
         [JsonProperty("strIngredient10")]
-        public string strIngredient10 { get; set; }
+        public string StrIngredient10 { get; set; }
 
         [JsonProperty("strIngredient11")]
-        public string strIngredient11 { get; set; }
+        public string StrIngredient11 { get; set; }
 
         [JsonProperty("strIngredient12")]
-        public string strIngredient12 { get; set; }
+        public string StrIngredient12 { get; set; }
 
         [JsonProperty("strIngredient13")]
-        public string strIngredient13 { get; set; }
+        public string StrIngredient13 { get; set; }
 
         [JsonProperty("strIngredient14")]
-        public string strIngredient14 { get; set; }
+        public string StrIngredient14 { get; set; }
 
         [JsonProperty("strIngredient15")]
-        public string strIngredient15 { get; set; }
+        public string StrIngredient15 { get; set; }
 
         [JsonProperty("strMeasure1")]
-        public string strMeasure1 { get; set; }
+        public string StrMeasure1 { get; set; }
 
         [JsonProperty("strMeasure2")]
-        public string strMeasure2 { get; set; }
+        public string StrMeasure2 { get; set; }
 
         [JsonProperty("strMeasure3")]
-        public string strMeasure3 { get; set; }
+        public string StrMeasure3 { get; set; }
 
         [JsonProperty("strMeasure4")]
-        public string strMeasure4 { get; set; }
+        public string StrMeasure4 { get; set; }
 
         [JsonProperty("strMeasure5")]
-        public string strMeasure5 { get; set; }
+        public string StrMeasure5 { get; set; }
 
         [JsonProperty("strMeasure6")]
-        public string strMeasure6 { get; set; }
+        public string StrMeasure6 { get; set; }
 
         [JsonProperty("strMeasure7")]
-        public string strMeasure7 { get; set; }
+        public string StrMeasure7 { get; set; }
 
         [JsonProperty("strMeasure8")]
-        public string strMeasure8 { get; set; }
+        public string StrMeasure8 { get; set; }
 
         [JsonProperty("strMeasure9")]
-        public string strMeasure9 { get; set; }
+        public string StrMeasure9 { get; set; }
 
         [JsonProperty("strMeasure10")]
-        public string strMeasure10 { get; set; }
+        public string StrMeasure10 { get; set; }
 
         [JsonProperty("strMeasure11")]
-        public string strMeasure11 { get; set; }
+        public string StrMeasure11 { get; set; }
 
         [JsonProperty("strMeasure12")]
-        public string strMeasure12 { get; set; }
+        public string StrMeasure12 { get; set; }
 
         [JsonProperty("strMeasure13")]
-        public string strMeasure13 { get; set; }
+        public string StrMeasure13 { get; set; }
 
         [JsonProperty("strMeasure14")]
-        public string strMeasure14 { get; set; }
+        public string StrMeasure14 { get; set; }
 
         [JsonProperty("strMeasure15")]
-        public string strMeasure15 { get; set; }
-
-        [JsonProperty("dateModified")]
-        public string dateModified { get; set; }
+        public string StrMeasure15 { get; set; }
     }
 
     public class CocktailDetail
     {
 
         [JsonProperty("drinks")]
-        public List<DrinkDetail> drinks { get; set; }
+        public List<DrinkDetail> Drinks { get; set; }
+    }
+
+    internal static class Converter
+    {
+        public static readonly JsonSerializerSettings Settings = new JsonSerializerSettings
+        {
+            MetadataPropertyHandling = MetadataPropertyHandling.Ignore,
+            DateParseHandling = DateParseHandling.None,
+            Converters =
+            {
+                new IsoDateTimeConverter { DateTimeStyles = DateTimeStyles.AssumeUniversal }
+            },
+        };
+    }
+
+    internal class DecodeArrayConverter : JsonConverter
+    {
+        public override bool CanConvert(Type t) => t == typeof(List<long>);
+
+        public override object ReadJson(JsonReader reader, Type t, object existingValue, JsonSerializer serializer)
+        {
+            reader.Read();
+            var value = new List<long>();
+            while (reader.TokenType != JsonToken.EndArray)
+            {
+                var converter = ParseStringConverter.Singleton;
+                var arrayItem = (long)converter.ReadJson(reader, typeof(long), null, serializer);
+                value.Add(arrayItem);
+                reader.Read();
+            }
+            return value;
+        }
+
+        public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
+        {
+            var value = (List<long>)untypedValue;
+            writer.WriteStartArray();
+            foreach (var arrayItem in value)
+            {
+                var converter = ParseStringConverter.Singleton;
+                converter.WriteJson(writer, arrayItem, serializer);
+            }
+            writer.WriteEndArray();
+            return;
+        }
+
+        public static readonly DecodeArrayConverter Singleton = new DecodeArrayConverter();
+    }
+
+    internal class ParseStringConverter : JsonConverter
+    {
+        public override bool CanConvert(Type t) => t == typeof(long) || t == typeof(long?);
+
+        public override object ReadJson(JsonReader reader, Type t, object existingValue, JsonSerializer serializer)
+        {
+            if (reader.TokenType == JsonToken.Null) return null;
+            var value = serializer.Deserialize<string>(reader);
+            long l;
+            if (Int64.TryParse(value, out l))
+            {
+                return l;
+            }
+            throw new Exception("fail");
+        }
+
+        public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
+        {
+            if (untypedValue == null)
+            {
+                serializer.Serialize(writer, null);
+                return;
+            }
+            var value = (long)untypedValue;
+            serializer.Serialize(writer, value.ToString());
+            return;
+        }
+
+        public static readonly ParseStringConverter Singleton = new ParseStringConverter();
     }
 }

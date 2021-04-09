@@ -13,7 +13,7 @@
 namespace Baramin.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views/FavouritesPage.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\FavouritesPage.xaml")]
     public partial class FavouritesPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]

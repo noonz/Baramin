@@ -1,9 +1,8 @@
-﻿using System;
-using SQLite;
+﻿using SQLite;
 
 namespace Baramin.Models
 {
-    [Table("Items")]
+    [Table("FavDrinks")]
     public class Favourite
     {
         [PrimaryKey, Column("_id")]

@@ -14,11 +14,20 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\FavouriteView.xaml.cs">
+      <DependentUpon>FavouriteView.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\FavouritesPage.xaml.cs">
       <DependentUpon>FavouritesPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\RandomDrinkPage.xaml.cs">
       <DependentUpon>RandomDrinkPage.xaml</DependentUpon>
     </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\FavouriteView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

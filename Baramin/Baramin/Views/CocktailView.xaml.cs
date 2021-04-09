@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Baramin.Models;
 using Baramin.ViewModels;
-using Baramin.Models;
 using Xamarin.Forms;
 
 namespace Baramin.Views

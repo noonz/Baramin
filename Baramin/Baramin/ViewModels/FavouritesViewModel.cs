@@ -1,19 +1,15 @@
 ﻿using Baramin.Views;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Xamarin.Forms;
 
 namespace Baramin.ViewModels
 {
-    public class FavouritesViewModel : BaseViewModel
+    public class FavouritesViewModel
     {
         public Command LoginCommand { get; }
 
         public FavouritesViewModel()
         {
-            Title = "Favourite Drinks";
-            LoginCommand = new Command(OnLoginClicked);
+
         }
 
         private async void OnLoginClicked(object obj)

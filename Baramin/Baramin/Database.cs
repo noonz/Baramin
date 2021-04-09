@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Baramin.Models;
+using SQLite;
+using System;
 using System.Collections.Generic;
 using System.IO;
-using Baramin.Models;
-using SQLite;
 
 namespace Baramin
 {
@@ -12,7 +12,7 @@ namespace Baramin
 
         public Database()
         {
-            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "final_project.db3");
+            string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Personal), "Baramin.db3");
             database = new SQLiteConnection(dbPath);
             database.CreateTable<Favourite>();
         }

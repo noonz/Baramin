@@ -897,24 +897,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/davenoonz/.nuget/packages/": {}
+    "C:\\Users\\noonz\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/davenoonz/git/xamarin_case_study/Baramin/Baramin/Baramin.csproj",
+      "projectUniqueName": "C:\\Users\\noonz\\git\\school\\MAPD02\\xamarin_case_study\\Baramin\\Baramin\\Baramin.csproj",
       "projectName": "Baramin",
-      "projectPath": "/Users/davenoonz/git/xamarin_case_study/Baramin/Baramin/Baramin.csproj",
-      "packagesPath": "/Users/davenoonz/.nuget/packages/",
-      "outputPath": "/Users/davenoonz/git/xamarin_case_study/Baramin/Baramin/obj/",
+      "projectPath": "C:\\Users\\noonz\\git\\school\\MAPD02\\xamarin_case_study\\Baramin\\Baramin\\Baramin.csproj",
+      "packagesPath": "C:\\Users\\noonz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\noonz\\git\\school\\MAPD02\\xamarin_case_study\\Baramin\\Baramin\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/davenoonz/.config/NuGet/NuGet.Config"
+        "C:\\Users\\noonz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -970,7 +977,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

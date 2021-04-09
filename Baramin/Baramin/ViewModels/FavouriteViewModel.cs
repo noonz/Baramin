@@ -1,7 +1,6 @@
-﻿using System;
+﻿using Baramin.Models;
 using System.Collections.Generic;
 using System.ComponentModel;
-using Baramin.Models;
 
 namespace Baramin.ViewModels
 {
@@ -21,7 +20,7 @@ namespace Baramin.ViewModels
         public void GetFavourite()
         {
             FavouriteListView = database.GetFavourite();
-            OnPropertyChanged("FavoriteListView");
+            OnPropertyChanged("FavouriteListView");
         }
 
         public void InsertFavourite(Favourite fav)
