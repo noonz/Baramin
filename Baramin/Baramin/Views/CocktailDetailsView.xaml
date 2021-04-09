@@ -382,7 +382,7 @@
                             Grid.Column="0"
                             Grid.ColumnSpan="2">
                             <Label
-                                Text="How to do it:"
+                                Text="Instructions:"
                                 Style="{StaticResource recipeInstructionsLabelStyle}" />
                             <Label
                                 Text="{Binding _recipeInstructions, StringFormat='{0:N}'}"

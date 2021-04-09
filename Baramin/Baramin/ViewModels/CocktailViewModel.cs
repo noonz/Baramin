@@ -20,8 +20,6 @@ namespace Baramin.ViewModels
 
         public List<DrinkDetail> _cocktailsListView { get; set; }
         public string _loadingBackgroundColor { get; set; }
-        public string _loadingText { get; set; }
-        public string _search { get; set; }
         public string _mainLabel { get; set; }
         public bool _activityIndicatorRunning { get; set; }
 
@@ -39,9 +37,7 @@ namespace Baramin.ViewModels
             _viewModelInstance = this;
             _cocktailsListView = new List<DrinkDetail>();
             _loadingBackgroundColor = "#fff";
-            _loadingText = "Search";
-            _search = "";
-            _mainLabel = "Top cocktails";
+            _mainLabel = "Top Cocktails";
             _activityIndicatorRunning = false;
             _ = SearchBestRecipes();
         }
@@ -112,49 +108,6 @@ namespace Baramin.ViewModels
             OnPropertyChanged("_recipeMeasures");
             OnPropertyChanged("_recipeInstructions");
             OnPropertyChanged("_recipeIsAlcoholic");
-        }
-
-        public Command HandleSearchCommand => new Command(async (e) => {
-            if (e.ToString() != "search")
-            {
-                _search = e.ToString();
-                OnPropertyChanged("_search");
-            }
-            await SearchRecipes();
-        });
-
-        async Task SearchRecipes()
-        {
-            _cocktailsListView = new List<DrinkDetail>();
-            OnPropertyChanged("_cocktailsListView");
-            _mainLabel = "";
-            OnPropertyChanged("_mainLabel");
-
-            Loading();
-            await GetRecipes();
-            Loading();
-
-            _mainLabel = "Results for: " + _search;
-            OnPropertyChanged("_mainLabel");
-        }
-
-        async Task GetRecipes()
-        {
-            var client = new HttpClient();
-            var apiAddress = _apiAdressRecipe + "?s=" + _search;
-            var uri = new Uri(apiAddress);
-
-            var response = await client.GetAsync(uri);
-            if (response.IsSuccessStatusCode)
-            {
-                var jsonContent = await response.Content.ReadAsStringAsync();
-                var data = JsonConvert.DeserializeObject<CocktailDetail>(jsonContent);
-                if (data.drinks != null)
-                {
-                    _cocktailsListView = data.drinks;
-                    OnPropertyChanged("_cocktailsListView");
-                }
-            }
         }
 
         async Task SearchBestRecipes()

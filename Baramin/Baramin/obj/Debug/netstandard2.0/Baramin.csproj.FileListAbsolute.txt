@@ -60,7 +60,6 @@ C:/Users/noonz/git/school/MAPD02/xamarin_case_study/Baramin/Baramin/obj/Debug/ne
 /Users/davenoonz/git/xamarin_case_study/Baramin/Baramin/obj/Debug/netstandard2.0/Views/CocktailDetailsView.xaml.g.cs
 /Users/davenoonz/git/xamarin_case_study/Baramin/Baramin/obj/Debug/netstandard2.0/Views/CocktailView.xaml.g.cs
 /Users/davenoonz/git/xamarin_case_study/Baramin/Baramin/obj/Debug/netstandard2.0/Views/FavouritesPage.xaml.g.cs
-/Users/davenoonz/git/xamarin_case_study/Baramin/Baramin/obj/Debug/netstandard2.0/Views/ItemDetailPage.xaml.g.cs
 /Users/davenoonz/git/xamarin_case_study/Baramin/Baramin/obj/Debug/netstandard2.0/Views/RandomDrinkPage.xaml.g.cs
 /Users/davenoonz/git/xamarin_case_study/Baramin/Baramin/obj/Debug/netstandard2.0/Baramin.AssemblyInfoInputs.cache
 /Users/davenoonz/git/xamarin_case_study/Baramin/Baramin/obj/Debug/netstandard2.0/Baramin.AssemblyInfo.cs

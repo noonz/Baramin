@@ -15,16 +15,6 @@
     <ContentPage.Resources>
         <ResourceDictionary>
             
-            <Style x:Key="searchbarStyle" TargetType="SearchBar">
-                <Setter Property="FontSize" Value="12" />
-                <Setter Property="TextColor" Value="#bbbbbb" />
-                <Setter Property="BackgroundColor" Value="#08AEEA" />
-                <Setter Property="HorizontalOptions" Value="Start" />
-                <Setter Property="Grid.Column" Value="0" />
-                <Setter Property="Grid.Row" Value="0" />
-                <Setter Property="Placeholder" Value="Search for cocktails" />
-            </Style>
-            
             <Style x:Key="listViewStyle" TargetType="ListView">
                 <Setter Property="HasUnevenRows" Value="true" />
                 <Setter Property="SeparatorVisibility" Value="None" />
@@ -56,20 +46,7 @@
                 <Setter Property="Opacity" Value="0.7" />
                 <Setter Property="Aspect" Value="AspectFill" />
             </Style>
-            
-            <Style x:Key="suggestionsLabelStyle" TargetType="Label">
-                <Setter Property="FontSize" Value="Medium" />
-                <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="TextColor" Value="#08AEEA" />
-                <Setter Property="Grid.Column" Value="0" />
-                <Setter Property="Grid.Row" Value="1" />
-                <Setter Property="Margin" Value="15, 5, 0, 5" />
-            </Style>
-            
-            <Style x:Key="suggestionsImagesStyle" TargetType="Image">
-                <Setter Property="Opacity" Value="0.4" />
-                <Setter Property="Aspect" Value="AspectFill" />
-            </Style>
+
             
             <Style x:Key="mainLabelStyle" TargetType="Label">
                 <Setter Property="FontSize" Value="Medium" />
@@ -86,27 +63,7 @@
                 <Setter Property="TextColor" Value="#fff" />
                 <Setter Property="Margin" Value="15, 60, 5, 0" />
             </Style>
-            
-            <Style x:Key="suggestionsImagesLabelStyle" TargetType="Label">
-                <Setter Property="FontSize" Value="15" />
-                <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="TextColor" Value="#fff" />
-                <Setter Property="Margin" Value="15, 15, 15, 0" />
-            </Style>
-            
-            <Style x:Key="suggestionsScrollViewStyle" TargetType="ScrollView">
-                <Setter Property="Grid.Row" Value="2" />
-                <Setter Property="Grid.Column" Value="0" />
-                <Setter Property="Orientation" Value="Horizontal" />
-            </Style>
-            
-            <Style x:Key="suggestionsStackLayoutStyle" TargetType="StackLayout">
-                <Setter Property="Padding" Value="0" />
-                <Setter Property="Margin" Value="15, 0, 15, 0" />
-                <Setter Property="Spacing" Value="0" />
-                <Setter Property="HorizontalOptions" Value="FillAndExpand" />
-                <Setter Property="Orientation" Value="Horizontal" />
-            </Style>
+
             
             <Style x:Key="activityIndicatorStyle" TargetType="ActivityIndicator">
                 <Setter Property="Color" Value="#323232" />
@@ -135,57 +92,6 @@
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
                         </Grid.ColumnDefinitions>
-                        
-                        <SearchBar x:Name="searchValue" 
-                                   Text="{Binding _search}" 
-                                   SearchButtonPressed="HandleSearch" 
-                                   Style="{StaticResource searchbarStyle}">
-                        </SearchBar>
-                        
-                        <Label Text="Suggestions"
-                               Style="{StaticResource suggestionsLabelStyle}" />
-                        
-                        
-                        <ScrollView Style="{StaticResource suggestionsScrollViewStyle}">
-  
-                            <StackLayout Style="{StaticResource suggestionsStackLayoutStyle}">
-                                <Frame Style="{StaticResource suggestionsFrameStyle}">
-                                    <Grid>
-                                        <Image Source="cosmo.jpg" Style="{StaticResource suggestionsImagesStyle}"/>
-                                            <Image.GestureRecognizers>
-                                                <TapGestureRecognizer
-                                                    Tapped="HandleCosmoSearch"
-                                                    NumberOfTapsRequired="1" />
-                                            </Image.GestureRecognizers>
-                                        <Label Text="Cosmo" Style="{StaticResource suggestionsImagesLabelStyle}" />
-                                    </Grid>
-                                </Frame>
-                                <Frame Style="{StaticResource suggestionsFrameStyle}">
-                                    <Grid>
-                                        <Image Source="gintonic.jpg" Style="{StaticResource suggestionsImagesStyle}"/>
-                                            <Image.GestureRecognizers>
-                                                <TapGestureRecognizer
-                                                    Tapped="HandleGinSearch"
-                                                    NumberOfTapsRequired="1" />
-                                            </Image.GestureRecognizers>
-                                        <Label Text="Gin" Style="{StaticResource suggestionsImagesLabelStyle}" />
-                                    </Grid>
-                                </Frame>
-                                <Frame Style="{StaticResource suggestionsFrameStyle}">
-                                    <Grid>
-                                        <Image Source="onthebeach.jpg" Style="{StaticResource suggestionsImagesStyle}"/>
-                                            <Image.GestureRecognizers>
-                                                <TapGestureRecognizer
-                                                    Tapped="HandleBeachSearch"
-                                                    NumberOfTapsRequired="1" />
-                                            </Image.GestureRecognizers>
-                                        <Label Text="Orange" Style="{StaticResource suggestionsImagesLabelStyle}" />
-                                    </Grid>
-                                </Frame>
-                                
-                            </StackLayout>
-
-                        </ScrollView>
                         
                         <Label Text="{Binding _mainLabel}"
                                Style="{StaticResource mainLabelStyle}" />

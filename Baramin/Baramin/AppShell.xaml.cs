@@ -11,7 +11,6 @@ namespace Baramin
         public AppShell()
         {
             InitializeComponent();
-            Routing.RegisterRoute(nameof(ItemDetailPage), typeof(ItemDetailPage));
         }
 
         private async void OnMenuItemClicked(object sender, EventArgs e)
