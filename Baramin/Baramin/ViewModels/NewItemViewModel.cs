@@ -49,11 +49,11 @@ namespace Baramin.ViewModels
 
         private async void OnSave()
         {
-            Drink newItem = new Drink()
+            Cocktail newItem = new Cocktail()
             {
-                Id = Guid.NewGuid().ToString(),
-                Text = Text,
-                Description = Description
+                IdDrink = Guid.NewGuid().ToString(),
+                DrinkName = Text,
+                Instructions = Description
             };
 
             await DataStore.AddItemAsync(newItem);

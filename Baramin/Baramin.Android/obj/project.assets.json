@@ -2179,32 +2179,39 @@
     ]
   },
   "packageFolders": {
-    "/Users/davenoonz/.nuget/packages/": {}
+    "C:\\Users\\noonz\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/davenoonz/git/xamarin_case_study/Baramin/Baramin.Android/Baramin.Android.csproj",
+      "projectUniqueName": "C:\\Users\\noonz\\git\\school\\MAPD02\\xamarin_case_study\\Baramin\\Baramin.Android\\Baramin.Android.csproj",
       "projectName": "Baramin.Android",
-      "projectPath": "/Users/davenoonz/git/xamarin_case_study/Baramin/Baramin.Android/Baramin.Android.csproj",
-      "packagesPath": "/Users/davenoonz/.nuget/packages/",
-      "outputPath": "/Users/davenoonz/git/xamarin_case_study/Baramin/Baramin.Android/obj/",
+      "projectPath": "C:\\Users\\noonz\\git\\school\\MAPD02\\xamarin_case_study\\Baramin\\Baramin.Android\\Baramin.Android.csproj",
+      "packagesPath": "C:\\Users\\noonz\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\noonz\\git\\school\\MAPD02\\xamarin_case_study\\Baramin\\Baramin.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/davenoonz/.config/NuGet/NuGet.Config"
+        "C:\\Users\\noonz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "monoandroid11.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "monoandroid11.0": {
           "projectReferences": {
-            "/Users/davenoonz/git/xamarin_case_study/Baramin/Baramin/Baramin.csproj": {
-              "projectPath": "/Users/davenoonz/git/xamarin_case_study/Baramin/Baramin/Baramin.csproj"
+            "C:\\Users\\noonz\\git\\school\\MAPD02\\xamarin_case_study\\Baramin\\Baramin\\Baramin.csproj": {
+              "projectPath": "C:\\Users\\noonz\\git\\school\\MAPD02\\xamarin_case_study\\Baramin\\Baramin\\Baramin.csproj"
             }
           }
         }

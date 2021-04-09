@@ -44,9 +44,9 @@ namespace Baramin.ViewModels
             try
             {
                 var item = await DataStore.GetItemAsync(itemId);
-                Id = item.Id;
-                Text = item.Text;
-                Description = item.Description;
+                Id = item.IdDrink;
+                Text = item.DrinkName;
+                Description = item.Instructions;
             }
             catch (Exception)
             {

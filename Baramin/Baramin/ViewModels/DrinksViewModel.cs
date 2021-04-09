@@ -10,22 +10,20 @@ namespace Baramin.ViewModels
 {
     public class DrinksViewModel : BaseViewModel
     {
-        private Drink _selectedItem;
+        private Cocktail _selectedItem;
 
-        public ObservableCollection<Drink> Drinks { get; }
+        public ObservableCollection<Cocktail> Cocktails { get; }
         public Command LoadItemsCommand { get; }
         public Command AddItemCommand { get; }
-        public Command<Drink> ItemTapped { get; }
+        public Command<Cocktail> ItemTapped { get; }
 
         public DrinksViewModel()
         {
             Title = "Drink List";
-            Drinks = new ObservableCollection<Drink>();
+            Cocktails = new ObservableCollection<Cocktail>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
-            ItemTapped = new Command<Drink>(OnItemSelected);
-
-            AddItemCommand = new Command(OnAddItem);
+            ItemTapped = new Command<Cocktail>(OnItemSelected);
         }
 
         async Task ExecuteLoadItemsCommand()
@@ -34,11 +32,11 @@ namespace Baramin.ViewModels
 
             try
             {
-                Drinks.Clear();
+                Cocktails.Clear();
                 var items = await DataStore.GetItemsAsync(true);
                 foreach (var item in items)
                 {
-                    Drinks.Add(item);
+                    Cocktails.Add(item);
                 }
             }
             catch (Exception ex)
@@ -57,7 +55,7 @@ namespace Baramin.ViewModels
             SelectedItem = null;
         }
 
-        public Drink SelectedItem
+        public Cocktail SelectedItem
         {
             get => _selectedItem;
             set
@@ -67,18 +65,13 @@ namespace Baramin.ViewModels
             }
         }
 
-        private async void OnAddItem(object obj)
-        {
-            await Shell.Current.GoToAsync(nameof(NewItemPage));
-        }
-
-        async void OnItemSelected(Drink item)
+        async void OnItemSelected(Cocktail item)
         {
             if (item == null)
                 return;
 
             // This will push the ItemDetailPage onto the navigation stack
-            await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={item.Id}");
+            await Shell.Current.GoToAsync($"{nameof(ItemDetailPage)}?{nameof(ItemDetailViewModel.ItemId)}={item.IdDrink}");
         }
     }
 }

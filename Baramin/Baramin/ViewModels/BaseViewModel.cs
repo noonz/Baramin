@@ -10,7 +10,7 @@ namespace Baramin.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Drink> DataStore => DependencyService.Get<IDataStore<Drink>>();
+        public IDataStore<Cocktail> DataStore => DependencyService.Get<IDataStore<Cocktail>>();
 
         bool isBusy = false;
         public bool IsBusy
