@@ -3,7 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:viewModels="clr-namespace:Baramin.ViewModels"
-    BackgroundColor="#ffc32b"
+    BackgroundColor="#323232"
     x:Class="Baramin.Views.FavouriteView">
     <ContentPage.BindingContext>
         <viewModels:FavouriteViewModel />
@@ -13,14 +13,14 @@
             <Style x:Key="titleLabelStyle" TargetType="Label">
                 <Setter Property="FontSize" Value="Medium" />
                 <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="TextColor" Value="#ffc32b" />
+                <Setter Property="TextColor" Value="#08AEEA" />
                 <Setter Property="Grid.Column" Value="0" />
                 <Setter Property="Grid.Row" Value="1" />
                 <Setter Property="Margin" Value="15, 20, 0, 5" />
             </Style>
             <Style x:Key="favouriteListViewStyle" TargetType="ListView">
                 <Setter Property="SeparatorVisibility" Value="None" />
-                <Setter Property="BackgroundColor" Value="#fff" />
+                <Setter Property="BackgroundColor" Value="#323232" />
             </Style>
             <Style x:Key="stackListViewStyle" TargetType="StackLayout">
                 <Setter Property="Orientation" Value="Horizontal" />
@@ -64,12 +64,12 @@
                                     Style="{StaticResource imageListViewStyle}" />
                                 <Label
                                     Text="{Binding Name}"
-                                    TextColor="#323232"
+                                    TextColor="#149414"
                                     FontSize="Small" />
                                 <Label
                                     Text="{Binding Type}"
                                     FontSize="Micro"
-                                    TextColor="#6d6d6d" />
+                                    TextColor="#149414" />
                             </StackLayout>
                         </ViewCell.View>
                     </ViewCell>

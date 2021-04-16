@@ -62,7 +62,6 @@ C:\Users\noonz\git\school\MAPD02\xamarin_case_study\Baramin\Baramin\obj\Debug\ne
 C:\Users\noonz\git\school\MAPD02\xamarin_case_study\Baramin\Baramin\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 C:\Users\noonz\git\school\MAPD02\xamarin_case_study\Baramin\Baramin\obj\Debug\netstandard2.0\Views\CocktailDetailsView.xaml.g.cs
 C:\Users\noonz\git\school\MAPD02\xamarin_case_study\Baramin\Baramin\obj\Debug\netstandard2.0\Views\CocktailView.xaml.g.cs
-C:\Users\noonz\git\school\MAPD02\xamarin_case_study\Baramin\Baramin\obj\Debug\netstandard2.0\Views\FavouritesPage.xaml.g.cs
 C:\Users\noonz\git\school\MAPD02\xamarin_case_study\Baramin\Baramin\obj\Debug\netstandard2.0\Views\RandomDrinkPage.xaml.g.cs
 C:\Users\noonz\git\school\MAPD02\xamarin_case_study\Baramin\Baramin\obj\Debug\netstandard2.0\Baramin.AssemblyInfoInputs.cache
 C:\Users\noonz\git\school\MAPD02\xamarin_case_study\Baramin\Baramin\obj\Debug\netstandard2.0\Baramin.AssemblyInfo.cs
@@ -73,3 +72,4 @@ C:\Users\noonz\git\school\MAPD02\xamarin_case_study\Baramin\Baramin\obj\Debug\ne
 C:\Users\noonz\git\school\MAPD02\xamarin_case_study\Baramin\Baramin\obj\Debug\netstandard2.0\Baramin.pdb
 C:\Users\noonz\git\school\MAPD02\xamarin_case_study\Baramin\Baramin\obj\Debug\netstandard2.0\Views\FavouriteView.xaml.g.cs
 C:\Users\noonz\git\school\MAPD02\xamarin_case_study\Baramin\Baramin\obj\Debug\netstandard2.0\Baramin.csprojAssemblyReference.cache
+C:\Users\noonz\git\school\MAPD02\xamarin_case_study\Baramin\Baramin\obj\Debug\netstandard2.0\Views\RandomDrinkDetailsView.xaml.g.cs

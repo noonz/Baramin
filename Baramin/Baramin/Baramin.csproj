@@ -17,9 +17,6 @@
     <Compile Update="Views\FavouriteView.xaml.cs">
       <DependentUpon>FavouriteView.xaml</DependentUpon>
     </Compile>
-    <Compile Update="Views\FavouritesPage.xaml.cs">
-      <DependentUpon>FavouritesPage.xaml</DependentUpon>
-    </Compile>
     <Compile Update="Views\RandomDrinkPage.xaml.cs">
       <DependentUpon>RandomDrinkPage.xaml</DependentUpon>
     </Compile>
@@ -28,6 +25,9 @@
   <ItemGroup>
     <EmbeddedResource Update="Views\FavouriteView.xaml">
       <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\RandomDrinkDetailsView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

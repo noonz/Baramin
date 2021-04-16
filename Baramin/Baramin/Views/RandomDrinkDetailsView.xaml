@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:viewModels="clr-namespace:Baramin.ViewModels"
     BackgroundColor="#323232"
     xmlns:flv="clr-namespace:DLToolkit.Forms.Controls;assembly=DLToolkit.Forms.Controls.FlowListView"
-    x:Class="Baramin.Views.CocktailDetailsView">
+    x:Class="Baramin.Views.RandomDrinkDetailsView">
     <ContentPage.BindingContext>
-        <viewModels:CocktailViewModel />
+        <viewModels:RandomDrinkViewModel />
     </ContentPage.BindingContext>
     <ContentPage.Resources>
         <ResourceDictionary>

@@ -28,7 +28,10 @@ namespace Baramin.Views
 
         void Handle_Clicked_Remove(object sender, System.EventArgs e)
         {
-            // TODO
+            var menuItem = (Favourite)((MenuItem)sender).CommandParameter;
+            var vm = BindingContext as FavouriteViewModel;
+            vm.DeleteFavourite(menuItem.Id);
+            vm.GetFavourite();
         }
     }
 }

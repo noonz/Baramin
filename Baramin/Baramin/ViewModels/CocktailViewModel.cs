@@ -18,7 +18,6 @@ namespace Baramin.ViewModels
 
         public List<DrinkDetail> _cocktailsListView { get; set; }
         public string _mainLabel { get; set; }
-
         public DrinkDetail _recipeDetails { get; set; }
         public string _recipeImage { get; set; }
         public string _recipeTitle { get; set; }
@@ -46,48 +45,46 @@ namespace Baramin.ViewModels
             _recipeIngredients = new List<string>();
             _recipeMeasures = new List<string>();
 
+           
             if (cocktail.StrIngredient1 != null)
-            {
-                if (cocktail.StrIngredient1 != "")
-                    _recipeIngredients.Add(cocktail.StrIngredient1);
-                if (cocktail.StrIngredient2 != "")
-                    _recipeIngredients.Add(cocktail.StrIngredient2);
-                if (cocktail.StrIngredient3 != "")
-                    _recipeIngredients.Add(cocktail.StrIngredient3);
-                if (cocktail.StrIngredient4 != "")
-                    _recipeIngredients.Add(cocktail.StrIngredient4);
-                if (cocktail.StrIngredient5 != "")
-                    _recipeIngredients.Add(cocktail.StrIngredient5);
-                if (cocktail.StrIngredient6 != "")
-                    _recipeIngredients.Add(cocktail.StrIngredient6);
-                if (cocktail.StrIngredient7 != "")
-                    _recipeIngredients.Add(cocktail.StrIngredient7);
-                if (cocktail.StrIngredient8 != "")
-                    _recipeIngredients.Add(cocktail.StrIngredient8);
-                if (cocktail.StrIngredient9 != "")
-                    _recipeIngredients.Add(cocktail.StrIngredient9);
-            }
+                _recipeIngredients.Add(cocktail.StrIngredient1);
+            if (cocktail.StrIngredient2 != null)
+                _recipeIngredients.Add(cocktail.StrIngredient2);
+            if (cocktail.StrIngredient3 != null)
+                _recipeIngredients.Add(cocktail.StrIngredient3);
+            if (cocktail.StrIngredient4 != null)
+                _recipeIngredients.Add(cocktail.StrIngredient4);
+            if (cocktail.StrIngredient5 != null)
+                _recipeIngredients.Add(cocktail.StrIngredient5);
+            if (cocktail.StrIngredient6 != null)
+                _recipeIngredients.Add(cocktail.StrIngredient6);
+            if (cocktail.StrIngredient7 != null)
+                _recipeIngredients.Add(cocktail.StrIngredient7);
+            if (cocktail.StrIngredient8 != null)
+                _recipeIngredients.Add(cocktail.StrIngredient8);
+            if (cocktail.StrIngredient9 != null)
+                _recipeIngredients.Add(cocktail.StrIngredient9);
+            
+           
             if (cocktail.StrMeasure1 != null)
-            {
-                if (cocktail.StrMeasure1 != "")
-                    _recipeMeasures.Add(cocktail.StrMeasure1);
-                if (cocktail.StrMeasure2 != "")
-                    _recipeMeasures.Add(cocktail.StrMeasure2);
-                if (cocktail.StrMeasure3 != "")
-                    _recipeMeasures.Add(cocktail.StrMeasure3);
-                if (cocktail.StrMeasure4 != "")
-                    _recipeMeasures.Add(cocktail.StrMeasure4);
-                if (cocktail.StrMeasure5 != "")
-                    _recipeMeasures.Add(cocktail.StrMeasure5);
-                if (cocktail.StrMeasure6 != "")
-                    _recipeMeasures.Add(cocktail.StrMeasure6);
-                if (cocktail.StrMeasure7 != "")
-                    _recipeMeasures.Add(cocktail.StrMeasure7);
-                if (cocktail.StrMeasure8 != "")
-                    _recipeMeasures.Add(cocktail.StrMeasure8);
-                if (cocktail.StrMeasure9 != "")
-                    _recipeMeasures.Add(cocktail.StrMeasure9);
-            }
+                _recipeMeasures.Add(cocktail.StrMeasure1);
+            if (cocktail.StrMeasure2 != null)
+                _recipeMeasures.Add(cocktail.StrMeasure2);
+            if (cocktail.StrMeasure3 != null)
+                _recipeMeasures.Add(cocktail.StrMeasure3);
+            if (cocktail.StrMeasure4 != null)
+                _recipeMeasures.Add(cocktail.StrMeasure4);
+            if (cocktail.StrMeasure5 != null)
+                _recipeMeasures.Add(cocktail.StrMeasure5);
+            if (cocktail.StrMeasure6 != null)
+                _recipeMeasures.Add(cocktail.StrMeasure6);
+            if (cocktail.StrMeasure7 != null)
+                _recipeMeasures.Add(cocktail.StrMeasure7);
+            if (cocktail.StrMeasure8 != null)
+                _recipeMeasures.Add(cocktail.StrMeasure8);
+            if (cocktail.StrMeasure9 != null)
+                _recipeMeasures.Add(cocktail.StrMeasure9);
+            
 
             if (cocktail.StrInstructions != null)
                 _recipeInstructions = cocktail.StrInstructions;
@@ -112,7 +109,7 @@ namespace Baramin.ViewModels
         async Task GetBestRecipes()
         {
             var client = new HttpClient();
-            var apiAddress = _apiAdressRecipe + "?s=cocktail";
+            var apiAddress = _apiAdressRecipe + "?s=";
             var uri = new Uri(apiAddress);
 
             var response = await client.GetAsync(uri);

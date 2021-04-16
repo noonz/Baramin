@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Baramin.Views.FavouritesPage.xaml", "Views/FavouritesPage.xaml", typeof(global::Baramin.Views.FavouritesPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Baramin.Views.View1.xaml", "Views/View1.xaml", typeof(global::Baramin.Views.View1))]
 
 namespace Baramin.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\FavouritesPage.xaml")]
-    public partial class FavouritesPage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\View1.xaml")]
+    public partial class View1 : global::Xamarin.Forms.ContentView {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(FavouritesPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(View1));
         }
     }
 }
