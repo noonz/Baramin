@@ -8,6 +8,8 @@ and displays them in a list for the user to click and retrieve details.(https://
 ## Libraries
 Libraries used in this project include:  
 **FlowListView:** nested scroll views  
+**SQLite:** database storage  
+**AzureStorage:** database storage  
 
 ## Screenshots
 ![homePage](./screenshots/bar_home.PNG)
