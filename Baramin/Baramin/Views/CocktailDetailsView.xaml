@@ -116,7 +116,7 @@
                             <Label Style="{StaticResource ingredientsLabelStyle}" />
                             <flv:FlowListView
                                 FlowColumnCount="1"
-                                HeightRequest="100"
+                                HeightRequest="50"
                                 HasUnevenRows="true"
                                 FlowItemsSource="{Binding _recipeIngredients}">
                                 <flv:FlowListView.FlowColumnTemplate>
@@ -132,7 +132,7 @@
                             <Label Style="{StaticResource measuresLabelStyle}" />
                             <flv:FlowListView
                                 FlowColumnCount="1"
-                                HeightRequest="100"
+                                HeightRequest="50"
                                 HasUnevenRows="true"
                                 FlowItemsSource="{Binding _recipeMeasures}">
                                 <flv:FlowListView.FlowColumnTemplate>
