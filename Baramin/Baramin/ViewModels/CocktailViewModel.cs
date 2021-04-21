@@ -27,6 +27,9 @@ namespace Baramin.ViewModels
         public string _recipeInstructions { get; set; }
         public string _recipeIsAlcoholic { get; set; }
 
+
+        //create new list including igredients and measures, use that to display on details page
+
         public CocktailViewModel()
         {
             _viewModelInstance = this;
@@ -106,6 +109,7 @@ namespace Baramin.ViewModels
             await GetBestRecipes();
         }
 
+        // handles api call
         async Task GetBestRecipes()
         {
             var client = new HttpClient();

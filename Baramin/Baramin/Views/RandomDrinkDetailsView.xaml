@@ -112,6 +112,9 @@
                         <Label
                             Text="{Binding _recipeCategory, StringFormat='Category: {0:N}'}"
                             Style="{StaticResource recipeAuthorStyle}" />
+                        
+                        
+                        
                         <StackLayout Grid.Column="0" Grid.Row="0">
                             <Label Style="{StaticResource ingredientsLabelStyle}" />
                             <flv:FlowListView
@@ -128,6 +131,8 @@
                                 </flv:FlowListView.FlowColumnTemplate>
                             </flv:FlowListView>
                         </StackLayout>
+                        
+                        
                         <StackLayout Grid.Column="1" Grid.Row="0">
                             <Label Style="{StaticResource measuresLabelStyle}" />
                             <flv:FlowListView
@@ -144,6 +149,9 @@
                                 </flv:FlowListView.FlowColumnTemplate>
                             </flv:FlowListView>
                         </StackLayout>
+                        
+                        
+                        
                         <StackLayout
                             Grid.Row="1"
                             Grid.Column="0"

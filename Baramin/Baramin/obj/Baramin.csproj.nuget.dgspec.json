@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\noonz\\git\\school\\MAPD02\\xamarin_case_study\\Baramin\\Baramin\\Baramin.csproj": {}
+    "C:\\Users\\noonz\\git\\Baramin\\Baramin\\Baramin\\Baramin.csproj": {}
   },
   "projects": {
-    "C:\\Users\\noonz\\git\\school\\MAPD02\\xamarin_case_study\\Baramin\\Baramin\\Baramin.csproj": {
+    "C:\\Users\\noonz\\git\\Baramin\\Baramin\\Baramin\\Baramin.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\noonz\\git\\school\\MAPD02\\xamarin_case_study\\Baramin\\Baramin\\Baramin.csproj",
+        "projectUniqueName": "C:\\Users\\noonz\\git\\Baramin\\Baramin\\Baramin\\Baramin.csproj",
         "projectName": "Baramin",
-        "projectPath": "C:\\Users\\noonz\\git\\school\\MAPD02\\xamarin_case_study\\Baramin\\Baramin\\Baramin.csproj",
+        "projectPath": "C:\\Users\\noonz\\git\\Baramin\\Baramin\\Baramin\\Baramin.csproj",
         "packagesPath": "C:\\Users\\noonz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\noonz\\git\\school\\MAPD02\\xamarin_case_study\\Baramin\\Baramin\\obj\\",
+        "outputPath": "C:\\Users\\noonz\\git\\Baramin\\Baramin\\Baramin\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
@@ -47,6 +47,10 @@
             "DLToolkit.Forms.Controls.FlowListView": {
               "target": "Package",
               "version": "[2.0.11, )"
+            },
+            "FirebaseDatabase.net": {
+              "target": "Package",
+              "version": "[4.0.6, )"
             },
             "NETStandard.Library": {
               "suppressParent": "All",

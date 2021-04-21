@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baramin.Android", "Baramin\Baramin.Android\Baramin.Android.csproj", "{45741ECB-A8CC-4BCE-BC24-0335E8DD9E9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baramin", "Baramin\Baramin\Baramin.csproj", "{A3C5FF39-CC5B-489F-A5EC-B131B0AF32F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Baramin", "Baramin\Baramin\Baramin.csproj", "{A3C5FF39-CC5B-489F-A5EC-B131B0AF32F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
