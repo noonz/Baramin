@@ -49,7 +49,7 @@ namespace Baramin.Views
                 Id = cocktails.IdDrink,
                 Name = cocktails.StrDrink,
                 PhotoUrl = cocktails.StrDrinkThumb.ToString(),
-                Type = "Cocktail"
+                Type = cocktails.StrCategory
             };
             vm.AddToFavourite(fav);
         }

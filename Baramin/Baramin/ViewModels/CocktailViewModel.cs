@@ -48,46 +48,120 @@ namespace Baramin.ViewModels
             _recipeIngredients = new List<string>();
             _recipeMeasures = new List<string>();
 
-           
-            if (cocktail.StrIngredient1 != null)
+
+
+            if (cocktail.StrIngredient1 != null && cocktail.StrMeasure1 != null)
+            {
+                _recipeIngredients.Add($"{cocktail.StrMeasure1} --> {cocktail.StrIngredient1}");
+            }
+            else if (cocktail.StrIngredient1 != null)
+            {
                 _recipeIngredients.Add(cocktail.StrIngredient1);
-            if (cocktail.StrIngredient2 != null)
+            }
+            if (cocktail.StrIngredient2 != null && cocktail.StrMeasure2 != null)
+            {
+                _recipeIngredients.Add($"{cocktail.StrMeasure2} --> {cocktail.StrIngredient2}");
+            }
+            else if (cocktail.StrIngredient2 != null)
+            {
                 _recipeIngredients.Add(cocktail.StrIngredient2);
-            if (cocktail.StrIngredient3 != null)
+            }
+            if (cocktail.StrIngredient3 != null && cocktail.StrMeasure3 != null)
+            {
+                _recipeIngredients.Add($"{cocktail.StrMeasure3} --> {cocktail.StrIngredient3}");
+            }
+            else if (cocktail.StrIngredient3 != null)
+            {
                 _recipeIngredients.Add(cocktail.StrIngredient3);
-            if (cocktail.StrIngredient4 != null)
+            }
+            if (cocktail.StrIngredient4 != null && cocktail.StrMeasure4 != null)
+            {
+                _recipeIngredients.Add($"{cocktail.StrMeasure4} --> {cocktail.StrIngredient4}");
+            }
+            else if (cocktail.StrIngredient4 != null)
+            {
                 _recipeIngredients.Add(cocktail.StrIngredient4);
-            if (cocktail.StrIngredient5 != null)
+            }
+            if (cocktail.StrIngredient5 != null && cocktail.StrMeasure5 != null)
+            {
+                _recipeIngredients.Add($"{cocktail.StrMeasure5} --> {cocktail.StrIngredient5}");
+            }
+            else if (cocktail.StrIngredient5 != null)
+            {
                 _recipeIngredients.Add(cocktail.StrIngredient5);
-            if (cocktail.StrIngredient6 != null)
+            }
+            if (cocktail.StrIngredient6 != null && cocktail.StrMeasure6 != null)
+            {
+                _recipeIngredients.Add($"{cocktail.StrMeasure6} --> {cocktail.StrIngredient6}");
+            }
+            else if (cocktail.StrIngredient6 != null)
+            {
                 _recipeIngredients.Add(cocktail.StrIngredient6);
-            if (cocktail.StrIngredient7 != null)
+            }
+            if (cocktail.StrIngredient7 != null && cocktail.StrMeasure7 != null)
+            {
+                _recipeIngredients.Add($"{cocktail.StrMeasure7} --> {cocktail.StrIngredient7}");
+            }
+            else if (cocktail.StrIngredient7 != null)
+            {
                 _recipeIngredients.Add(cocktail.StrIngredient7);
-            if (cocktail.StrIngredient8 != null)
+            }
+            if (cocktail.StrIngredient8 != null && cocktail.StrMeasure8 != null)
+            {
+                _recipeIngredients.Add($"{cocktail.StrMeasure8} --> {cocktail.StrIngredient8}");
+            }
+            else if (cocktail.StrIngredient8 != null)
+            {
                 _recipeIngredients.Add(cocktail.StrIngredient8);
-            if (cocktail.StrIngredient9 != null)
+            }
+            if (cocktail.StrIngredient9 != null && cocktail.StrMeasure9 != null)
+            {
+                _recipeIngredients.Add($"{cocktail.StrMeasure9} --> {cocktail.StrIngredient9}");
+            }
+            else if (cocktail.StrIngredient9 != null)
+            {
                 _recipeIngredients.Add(cocktail.StrIngredient9);
-            
-           
-            if (cocktail.StrMeasure1 != null)
-                _recipeMeasures.Add(cocktail.StrMeasure1);
-            if (cocktail.StrMeasure2 != null)
-                _recipeMeasures.Add(cocktail.StrMeasure2);
-            if (cocktail.StrMeasure3 != null)
-                _recipeMeasures.Add(cocktail.StrMeasure3);
-            if (cocktail.StrMeasure4 != null)
-                _recipeMeasures.Add(cocktail.StrMeasure4);
-            if (cocktail.StrMeasure5 != null)
-                _recipeMeasures.Add(cocktail.StrMeasure5);
-            if (cocktail.StrMeasure6 != null)
-                _recipeMeasures.Add(cocktail.StrMeasure6);
-            if (cocktail.StrMeasure7 != null)
-                _recipeMeasures.Add(cocktail.StrMeasure7);
-            if (cocktail.StrMeasure8 != null)
-                _recipeMeasures.Add(cocktail.StrMeasure8);
-            if (cocktail.StrMeasure9 != null)
-                _recipeMeasures.Add(cocktail.StrMeasure9);
-            
+            }
+
+            //if (cocktail.StrIngredient1 != null)
+            //    _recipeIngredients.Add(cocktail.StrIngredient1);
+            //if (cocktail.StrIngredient2 != null)
+            //    _recipeIngredients.Add(cocktail.StrIngredient2);
+            //if (cocktail.StrIngredient3 != null)
+            //    _recipeIngredients.Add(cocktail.StrIngredient3);
+            //if (cocktail.StrIngredient4 != null)
+            //    _recipeIngredients.Add(cocktail.StrIngredient4);
+            //if (cocktail.StrIngredient5 != null)
+            //    _recipeIngredients.Add(cocktail.StrIngredient5);
+            //if (cocktail.StrIngredient6 != null)
+            //    _recipeIngredients.Add(cocktail.StrIngredient6);
+            //if (cocktail.StrIngredient7 != null)
+            //    _recipeIngredients.Add(cocktail.StrIngredient7);
+            //if (cocktail.StrIngredient8 != null)
+            //    _recipeIngredients.Add(cocktail.StrIngredient8);
+            //if (cocktail.StrIngredient9 != null)
+            //    _recipeIngredients.Add(cocktail.StrIngredient9);
+
+
+            //if (cocktail.StrMeasure1 != null)
+            //    _recipeMeasures.Add(cocktail.StrMeasure1);
+            //if (cocktail.StrMeasure2 != null)
+            //    _recipeMeasures.Add(cocktail.StrMeasure2);
+            //if (cocktail.StrMeasure3 != null)
+            //    _recipeMeasures.Add(cocktail.StrMeasure3);
+            //if (cocktail.StrMeasure4 != null)
+            //    _recipeMeasures.Add(cocktail.StrMeasure4);
+            //if (cocktail.StrMeasure5 != null)
+            //    _recipeMeasures.Add(cocktail.StrMeasure5);
+            //if (cocktail.StrMeasure6 != null)
+            //    _recipeMeasures.Add(cocktail.StrMeasure6);
+            //if (cocktail.StrMeasure7 != null)
+            //    _recipeMeasures.Add(cocktail.StrMeasure7);
+            //if (cocktail.StrMeasure8 != null)
+            //    _recipeMeasures.Add(cocktail.StrMeasure8);
+            //if (cocktail.StrMeasure9 != null)
+            //    _recipeMeasures.Add(cocktail.StrMeasure9);
+
 
             if (cocktail.StrInstructions != null)
                 _recipeInstructions = cocktail.StrInstructions;
