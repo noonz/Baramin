@@ -1,5 +1,4 @@
 # Baramin
-## Prof. Nathan Abourbih, Cloud Computing and Implement
 
 ## Overview
 This application is a simple app attempted MVVM structure using Xamarin Forms. It retrieves alcohol beverages from TheCocktailDB api  
